@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto.Views.principal"
+             Title="Principal">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+        <Label 
+            Text="Bienvenido"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"  
+            FontSize="25"
+            FontAttributes="Bold"/>
+        <Label 
+            Text="Conectando Comunidades Potenciando Negocios"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start"  
+            FontSize="20"/>
+
+        <Image Source="logo.PNG" WidthRequest="200"/>
+
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        
+            <Button x:Name="btnRegistrar"
+                    Text="Registrarse"
+                    Clicked="btnRegistrar_Clicked"
+                    HorizontalOptions="Center"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    BackgroundColor="Tomato"
+                    HeightRequest="50"
+                    WidthRequest="100" />
+
+            <Button x:Name="btnInicio"
+                    Text="Inicio"
+                    Clicked="btnInicio_Clicked"
+                    HorizontalOptions="Center"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    BackgroundColor="Tomato"
+                    HeightRequest="50"
+                    WidthRequest="100" />
+
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

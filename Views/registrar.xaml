@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto.Views.registrar"
+             Title="Registro">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label 
+                Text="Registrarse"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"  
+                FontSize="25"
+                FontAttributes="Bold" 
+                Grid.Row="0"
+                Grid.Column="0"/>
+
+            <Image Source="logo.PNG" WidthRequest="100" 
+                Grid.Row="0"
+                Grid.Column="1"/>
+        </Grid>
+
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               FontSize="18"
+               Grid.Row="0"
+               Grid.Column="0"/>
+
+            <Entry x:Name="txtNombre"
+                   Placeholder="Ingrese Nombre"
+                   FontSize="15"
+                   Grid.Row="0"
+                   Grid.Column="1" />
+
+            <Label Text="Apellido"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   FontSize="18"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="txtApellido"
+                   Placeholder="Ingrese Apellido"
+                   FontSize="15"
+                   Grid.Row="1"
+                   Grid.Column="1" />
+
+            <Label Text="Correo electrónico"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   FontSize="18"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="txtCorreo"
+                   Placeholder="Ingrese Correo electrónico"
+                   FontSize="15"
+                   Grid.Row="2"
+                   Grid.Column="1" />
+
+            <Label Text="Contraseña"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   FontSize="18"
+                   Grid.Row="3"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="txtContraseña"
+                   Placeholder="Ingrese Contraseña"
+                   FontSize="15"
+                   Grid.Row="3"
+                   Grid.Column="1" />
+        </Grid>
+
+        <Button x:Name="btnGuardar"
+                Text="Guardar"
+                HorizontalOptions="Center"
+                Clicked="btnGuardar_Clicked"
+                BackgroundColor="Tomato"
+                HeightRequest="50"
+                WidthRequest="100"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
