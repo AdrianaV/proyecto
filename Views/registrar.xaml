@@ -30,78 +30,43 @@
                 Grid.Column="1"/>
         </Grid>
 
-        <Grid RowSpacing="15">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-
-            <Label Text="Nombre"
+        <Label Text="Registrar como cliente"
                HorizontalOptions="Start"
                VerticalOptions="Center"
                FontSize="18"
-               Grid.Row="0"
-               Grid.Column="0"/>
+               FontAttributes="Bold" />
 
-            <Entry x:Name="txtNombre"
-                   Placeholder="Ingrese Nombre"
-                   FontSize="15"
-                   Grid.Row="0"
-                   Grid.Column="1" />
-
-            <Label Text="Apellido"
+        <Label Text="Se puede registrar como cliente para poder ingresar a la aplicación y encontrar los locales cercanos a tu ubicación."
                    HorizontalOptions="Start"
                    VerticalOptions="Center"
-                   FontSize="18"
-                   Grid.Row="1"
-                   Grid.Column="0"/>
+                   FontSize="14"/>
 
-            <Entry x:Name="txtApellido"
-                   Placeholder="Ingrese Apellido"
-                   FontSize="15"
-                   Grid.Row="1"
-                   Grid.Column="1" />
-
-            <Label Text="Correo electrónico"
-                   HorizontalOptions="Start"
-                   VerticalOptions="Center"
-                   FontSize="18"
-                   Grid.Row="2"
-                   Grid.Column="0"/>
-
-            <Entry x:Name="txtCorreo"
-                   Placeholder="Ingrese Correo electrónico"
-                   FontSize="15"
-                   Grid.Row="2"
-                   Grid.Column="1" />
-
-            <Label Text="Contraseña"
-                   HorizontalOptions="Start"
-                   VerticalOptions="Center"
-                   FontSize="18"
-                   Grid.Row="3"
-                   Grid.Column="0"/>
-
-            <Entry x:Name="txtContraseña"
-                   Placeholder="Ingrese Contraseña"
-                   FontSize="15"
-                   Grid.Row="3"
-                   Grid.Column="1" />
-        </Grid>
-
-        <Button x:Name="btnGuardar"
-                Text="Guardar"
+        <Button x:Name="btnRegistrarCliente"
+                Text="Registrar Cliente"
                 HorizontalOptions="Center"
-                Clicked="btnGuardar_Clicked"
+                Clicked="btnRegistrarCliente_Clicked"
                 BackgroundColor="Tomato"
                 HeightRequest="50"
-                WidthRequest="100"/>
-        
+                WidthRequest="200"/>
+
+        <Label Text="Registrar como cliente"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               FontSize="18"
+               FontAttributes="Bold" />
+
+        <Label Text="Se puede registrar como usuario para ingresar información de locales como: dirección, telefono y descripción"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               FontSize="14"/>
+
+            <Button x:Name="btnRegistrarUsuario"
+                Text="Registrar Usuario"
+                HorizontalOptions="Center"
+                Clicked="btnRegistrarUsuario_Clicked"
+                BackgroundColor="Tomato"
+                HeightRequest="50"
+                WidthRequest="200"/>
+            
     </VerticalStackLayout>
 </ContentPage>

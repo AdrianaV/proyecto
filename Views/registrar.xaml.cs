@@ -7,8 +7,13 @@ public partial class registrar : ContentPage
 		InitializeComponent();
 	}
 
-    private void btnGuardar_Clicked(object sender, EventArgs e)
+    private void btnRegistrarCliente_Clicked(object sender, EventArgs e)
     {
+        Navigation.PushAsync(new registrarCliente());
+    }
 
+    private void btnRegistrarUsuario_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new RegistrarUsuario());
     }
 }

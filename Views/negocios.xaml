@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto.Views.negocios"
+             Title="Negocios">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+        <Label
+            x:Name="lblUsuario"
+            FontSize="14"
+            HorizontalTextAlignment="End"/>
+
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Negocios encontrados"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"  
+                   FontSize="25"
+                   FontAttributes="Bold" 
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+
+            <Image Source="logo.PNG" WidthRequest="100" 
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+        </Grid>
+
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" Grid.Column="0" HorizontalOptions="Start" TextColor="Red"/>
+                <Label Text="Ubicación" Grid.Column="1" HorizontalOptions="Start" TextColor="Red"/>
+                <Label Text="" Grid.Column="2" HorizontalOptions="Start" TextColor="Red"/>
+            </Grid>
+            <ListView x:Name="listaNegocios">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label x:Name="lblNombre" Text="{Binding nombres}" Grid.Column="0" HorizontalOptions="Start" />
+                                <Label x:Name="lblUbicacion" Text="{Binding ubicacion}" Grid.Column="1" HorizontalOptions="Start" />
+                                <Button x:Name="btnDetalle" Text="Detalle" Grid.Column="2" Clicked="btnDetalle_Clicked"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+     </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto.Views.mapa"
+             Title="Mapa">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+        <Label
+            x:Name="lblUsuario"
+            FontSize="14"
+            HorizontalTextAlignment="End"/>
+
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="btnBuscar"
+                    Text="Buscar negocios"
+                    HorizontalOptions="Center"
+                    Clicked="btnBuscar_Clicked"
+                    BackgroundColor="Tomato"
+                    HeightRequest="50"
+                    WidthRequest="150"/>
+
+            <Image Source="logo.PNG" WidthRequest="100" 
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+        </Grid>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

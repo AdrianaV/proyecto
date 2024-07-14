@@ -34,10 +34,11 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="7*"/>
             </Grid.ColumnDefinitions>
 
             <Label Text="Usuario"
@@ -67,13 +68,16 @@
                     Grid.Column="1" />
         </Grid>
 
+
         <Button x:Name="btnIngresar"
                 Text="Ingresar"
                 HorizontalOptions="Center"
                 Clicked="btnIngresar_Clicked"
                 BackgroundColor="Tomato"
                 HeightRequest="50"
-                WidthRequest="100"/>
-        
+                WidthRequest="100"
+                Grid.Row="2"
+                Grid.Column="0" />
+
     </VerticalStackLayout>
 </ContentPage>

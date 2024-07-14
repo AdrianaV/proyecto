@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto.Views.RegistrarUsuario"
+             NavigationPage.HasBackButton="False"
+             Title="Registrar Usuario">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="20">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label 
+                    Text="Registrarse"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"  
+                    FontSize="25"
+                    FontAttributes="Bold" 
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+
+                <Image Source="logo.PNG" WidthRequest="80" 
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+            </Grid>
+        
+            <Label Text="Datos del usuario"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="18"
+                   FontAttributes="Bold"/>
+        
+            <Grid RowSpacing="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="7*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Label Text="Documento de identidad"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="0"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtDocumento"
+                       Placeholder="Ingrese Número de documento de identidad"
+                       FontSize="15"
+                       Grid.Row="0"
+                       Grid.Column="1" />
+
+                <Label Text="Nombres"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="1"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtNombres"
+                       Placeholder="Ingrese Nombres"
+                       FontSize="15"
+                       Grid.Row="1"
+                       Grid.Column="1" />
+
+                <Label Text="Apellidos"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="2"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtApellidos"
+                       Placeholder="Ingrese Apellidos"
+                       FontSize="15"
+                       Grid.Row="2"
+                       Grid.Column="1" />
+
+                <Label Text="Número de télefono"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="3"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtTelefono"
+                       Placeholder="Ingrese número de teléfono"
+                       FontSize="15"
+                       Grid.Row="3"
+                       Grid.Column="1" />
+
+                <Label Text="Correo electrónico"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="4"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtCorreo"
+                       Placeholder="Ingrese Correo electrónico"
+                       FontSize="15"
+                       Grid.Row="4"
+                       Grid.Column="1" />
+
+                <Label Text="Contraseña"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="5"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtContraseña"
+                       Placeholder="Ingrese Contraseña"
+                       FontSize="15"
+                       Grid.Row="5"
+                       Grid.Column="1" />
+            </Grid>
+        
+            <Label Text="Datos del negocio"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="18"
+                   FontAttributes="Bold" />
+        
+            <Grid RowSpacing="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="7*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Ubicación"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="0"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtUbicacion"
+                       Placeholder="Ingrese Ubicación"
+                       FontSize="15"
+                       Grid.Row="0"
+                       Grid.Column="1" />
+
+                <Label Text="Nombre Negocio"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="1"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtNegocio"
+                       Placeholder="Ingrese Nombre del negocio"
+                       FontSize="15"
+                       Grid.Row="1"
+                       Grid.Column="1" />
+
+                <Label Text="Detalle"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="2"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtDetalle"
+                       Placeholder="Ingrese Detalle del negocio"
+                       FontSize="15"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       HeightRequest="100"/>
+
+                <Label Text="Referencia"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="3"
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtReferencia"
+                       Placeholder="Ingrese Referencia del negocio"
+                       FontSize="15"
+                       Grid.Row="3"
+                       Grid.Column="1"
+                       HeightRequest="100"/>
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnGuardar"
+                        Text="Guardar"
+                        HorizontalOptions="Center"
+                        Clicked="btnGuardar_Clicked"
+                        BackgroundColor="Tomato"
+                        HeightRequest="50"
+                        WidthRequest="100"
+                        Grid.Row="0"
+                        Grid.Column="0"/>
+                <Button x:Name="btnSalir"
+                        Text="Salir"
+                        HorizontalOptions="Center"
+                        Clicked="btnSalir_Clicked"
+                        BackgroundColor="Tomato"
+                        HeightRequest="50"
+                        WidthRequest="100"
+                        Grid.Row="0"
+                        Grid.Column="1"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

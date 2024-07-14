@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto.Views.detalle"
+             Title="Detalle">
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+            
+            <Label x:Name="lblUsuario"
+                   FontSize="14"
+                   HorizontalTextAlignment="End"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label 
+                    Text="Resumen"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"  
+                    FontSize="25"
+                    FontAttributes="Bold" 
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+
+                <Image Source="logo.PNG" WidthRequest="80" 
+                Grid.Row="0"
+                Grid.Column="1"/>
+            </Grid>
+
+            <Grid RowSpacing="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="7*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Ubicación"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="0"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblUbicacion"
+                       FontSize="15"
+                       Grid.Row="0"
+                       Grid.Column="1" />
+
+                <Label Text="Nombre Negocio"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="1"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblNegocio"
+                       FontSize="15"
+                       Grid.Row="1"
+                       Grid.Column="1" />
+
+                <Label Text="Detalle"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="2"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblDetalle"
+                       FontSize="15"
+                       Grid.Row="2"
+                       Grid.Column="1"/>
+
+                <Label Text="Referencia"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       Grid.Row="3"
+                       Grid.Column="0"/>
+
+                <Label x:Name="lblReferencia"
+                       FontSize="15"
+                       Grid.Row="3"
+                       Grid.Column="1"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
